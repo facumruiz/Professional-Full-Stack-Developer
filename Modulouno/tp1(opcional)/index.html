@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <div>
+                <label>Nombre</label>
+                <input type="text" placeholder="Nombre" />
+            </div>
+            <div>
+                <label >Apellido</label>
+                <input type="password" placeholder="Apellido" />
+            </div>
+            <div>
+                <label>DNI</label>
+                <input type="number" placeholder="DNI" />
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="email" placeholder="Email" />
+            </div>
+            <div>
+                <label>Teléfono</label>
+                <input type="number" placeholder="Teléfono" />
+            </div>
+            <div>
+                <label>Tipo de seguro</label>
+                <select id="producto" name="producto" onchange="ShowSelected();">
+                    <option value="$500">Basico</option>
+                    <option value="$1000">Intermedio</option>
+                    <option value="$1500">Premium</option>
+                </select>               
+            </div>
+
+
+
+                <button type="submit">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+    <script type="text/javascript">
+        function ShowSelected()
+        {
+        /* Para obtener el valor */
+        var cod = document.getElementById("producto").value;
+        alert(cod);
+         
+        }
+        </script>
+
+</body>
+</html>
