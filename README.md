@@ -1,4 +1,6 @@
 # Desarrollo-en-ReactJS
+# Modulo 1: TP1 (optativo)
+
 Consigna:
 
 Seguro No Pagamos Cooperativa es una compañía de seguros que lleva 2 años en el mercado. Hasta el momento trabajan con los esquemas tradicionales de venta, es decir contacto telefónico o a través de sus asesores con los potenciales clientes.
@@ -9,17 +11,18 @@ Vos como parte del equipo de desarrollo debes realizar el maquetado HTML de este
 
 Los datos que se deben solicitar son los siguientes:
 
-Nombre
-Apellido
-DNI
-Email
-Teléfono
-Tipo de seguro
-Básico
-Intermedio
-Premium
- Al seleccionar el tipo de seguro (básico, intermedio, premium) se deberá mostrar el pantalla el valor de cada uno:
+Nombre,
+Apellido,
+DNI,
+Email,
+Teléfono,
+Tipo de seguro,
+Básico,
+Intermedio,
+Premium,
 
-Basico: $500
-Intermedio: $1000
-Premium: $1500
+Al seleccionar el tipo de seguro (básico, intermedio, premium) se deberá mostrar el pantalla el valor de cada uno:
+
+Basico: $500,
+Intermedio: $1000,
+Premium: $1500,
