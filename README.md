@@ -28,6 +28,4 @@ Al seleccionar el tipo de seguro (básico, intermedio, premium) se deberá mostr
 - Intermedio: $1000
 - Premium: $1500
 
-<button class="button" type="submit" href="https://tp1-optativo.facumruiz.repl.co/">Post comment (button)</button>
-<!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/ntkme/github-buttons/subscription" data-icon="octicon-eye" data-size="large" aria-label="Watch ntkme/github-buttons on GitHub">Watch</a>
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&width=435&lines=The+five+boxing+wizards+jump+quickly)](https://git.io/typing-svg)
