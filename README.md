@@ -28,7 +28,5 @@ Al seleccionar el tipo de seguro (básico, intermedio, premium) se deberá mostr
 - Intermedio: $1000
 - Premium: $1500
 
-# Buttons 2.0
-
-[![Sauce Test Status](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/2048px-Repl.it_logo.svg.png)](https://saucelabs.com/u/unicornuirocks)
+[![Build Status](https://travis-ci.org/alexwolfe/Buttons.svg?branch=buttons-2)](https://tp1-optativo.facumruiz.repl.co/)
 
