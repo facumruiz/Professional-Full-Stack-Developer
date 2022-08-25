@@ -30,6 +30,5 @@ Al seleccionar el tipo de seguro (básico, intermedio, premium) se deberá mostr
 
 # Buttons 2.0
 
-[![Sauce Test Status](https://saucelabs.com/browser-matrix/unicornuirocks.svg)](https://saucelabs.com/u/unicornuirocks)
+[![Sauce Test Status](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/2048px-Repl.it_logo.svg.png)](https://saucelabs.com/u/unicornuirocks)
 
-[![Build Status](https://travis-ci.org/alexwolfe/Buttons.svg?branch=buttons-2)](https://travis-ci.org/alexwolfe/Buttons)
