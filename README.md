@@ -28,5 +28,5 @@ Al seleccionar el tipo de seguro (básico, intermedio, premium) se deberá mostr
 - Intermedio: $1000
 - Premium: $1500
 
-<a href="https://www.buymeacoffee.com/roniemartinez" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+<a href="https://www.buymeacoffee.com/roniemartinez" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9JhK9tseVXDkYrNSpZWiYQFLlgvvfA13UAtW9uFU2hKlY_-26VVxkXti94_gDxP_kWHo&usqp=CAU" alt="Buy Me A Coffee" height="41" width="174"></a>
 
