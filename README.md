@@ -27,3 +27,5 @@ Al seleccionar el tipo de seguro (básico, intermedio, premium) se deberá mostr
 - Basico: $500
 - Intermedio: $1000
 - Premium: $1500
+
+<button class="button" type="submit" href="https://tp1-optativo.facumruiz.repl.co/">Post comment (button)</button>
