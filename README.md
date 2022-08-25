@@ -28,12 +28,8 @@ Al seleccionar el tipo de seguro (básico, intermedio, premium) se deberá mostr
 - Intermedio: $1000
 - Premium: $1500
 
- <!-- Buttons core css -->
-  <link rel="stylesheet" href="css/buttons.css">
+# Buttons 2.0
 
-  <!-- Only needed if you want support for dropdown menus -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/buttons.js"></script>
+[![Sauce Test Status](https://saucelabs.com/browser-matrix/unicornuirocks.svg)](https://saucelabs.com/u/unicornuirocks)
 
-  <!-- Only needed if you want font icons -->
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+[![Build Status](https://travis-ci.org/alexwolfe/Buttons.svg?branch=buttons-2)](https://travis-ci.org/alexwolfe/Buttons)
