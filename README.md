@@ -28,5 +28,5 @@ Al seleccionar el tipo de seguro (básico, intermedio, premium) se deberá mostr
 - Intermedio: $1000
 - Premium: $1500
 
-[![Build Status](https://travis-ci.org/alexwolfe/Buttons.svg?branch=buttons-2)](https://tp1-optativo.facumruiz.repl.co/)
+<a href="https://www.buymeacoffee.com/roniemartinez" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
