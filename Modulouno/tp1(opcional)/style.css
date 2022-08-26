@@ -8,14 +8,6 @@ form label {
 
 }
 
-/* PARA SACAR EL COSITO DE LOS INPUT DE TIPO NUMERO 
-form input[type=number]::-webkit-inner-spin-button, 
-form input[type=number]::-webkit-outer-spin-button { 
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none; 
-}
-*/
 
 /* Style inputs with type="text", select elements and textareas */
 input, select, textarea {
