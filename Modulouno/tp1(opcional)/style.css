@@ -161,15 +161,6 @@ body {
 }
 
 
-.footer {
-  
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #ddd;
-  color: white;
-  text-align: center;
-}
 
 .wrapper {
   height: 100vh;
@@ -264,3 +255,9 @@ img {
   }
 }
 
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color:  rgb(75, 75, 75);
+  color: white;
+}
