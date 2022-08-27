@@ -13,7 +13,7 @@
     <div class="header">
         <a href="#default" class="logo">Seguro No Pagamos</a>
         <div class="header-right">
-            <a href="#contact">Contacto</a>
+            <a href="#contacto">Contacto</a>
         </div>
     </div>
 
@@ -45,28 +45,32 @@
 
 
 
-    <div class="container" id="contact">
+    <div class="container" id="contacto">
 
         <h1 style="color: rgb(75, 75, 75);">Contactanos</h1>
-        <form action="action_page.js">
+        <form action="" onsubmit="contacto(); return false;" name="form_contacto">
 
-            <label>Nombre</label>
-            <input type="text" placeholder="Su nombre..." required>
+            <label for="Nombre">Nombre</label>
+            <input type="text" name= "nombre" id="id_Nombre" placeholder="Su nombre...">
+            <div id="nombre_error" class="error"></div>
 
-            <label>Apellido</label>
-            <input type="text" placeholder="Su apellido..." required>
+            <label for="Apellido">Apellido</label>
+            <input type="text" name= "apellido" id="id_Apellido" placeholder="Su apellido...">
+            <div id="apellido_error" class="error"></div>
 
-            <label>DNI</label>
-            <input type="number" placeholder="Su DNI..." required>
+            <label for="DNI">DNI</label>
+            <input type="number" name="dni" placeholder="Su DNI..." id="id_DNI">
+            <div id="dni_error" class="error"></div>
 
-            <label for="lname">Email</label>
-            <input type="email" placeholder="Su email.." required>
+            <label for="Email">Email</label>
+            <input type="text" name="email" placeholder="Su email.." id="id_Email">
+            <div id="email_error" class="error"></div>
 
-            <label for="lname">Telefono</label>
-            <input type="number" placeholder="Su Telefono..." required>
+            <label for="Telefono">Telefono</label>
+            <input type="number" name="telefono" placeholder="Su Telefono..." id="id_telefono">
 
             <label>Tipo de seguro</label>
-            <select id="producto" name="producto" onchange="ShowSelected();">
+            <select id="seguro" name="seguro" onchange="contacto();">
                 <option value="$500">Básico</option>
                 <option value="$1000">Intermedio</option>
                 <option value="$1500">Premium</option>
@@ -85,32 +89,10 @@
     <footer>
         <a href="https://github.com/facumruiz">Autor: Facundo Ruiz<a>
             <div><a>facundoruiz105@gmail.com</a></div>
-    
         </p>
     </footer>
 
-    <script type="text/javascript">
-        function ShowSelected() {
-            /* Para obtener el valor */
-            var cod = document.getElementById("producto").value;
-
-
-            /* Para obtener el texto */
-            var combo = document.getElementById("producto");
-            var selected = combo.options[combo.selectedIndex].text;
-
-            /* Para juntar texto mas valor */
-            var preciototal = (selected + ": " + cod);
-
-            /* Muestro en pantalla el valor del servicio */
-            document.getElementById("precio").innerHTML = preciototal
-
-        }
-
-
-
-    </script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

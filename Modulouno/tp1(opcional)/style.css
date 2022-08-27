@@ -253,3 +253,8 @@ footer {
   background-color:  rgb(75, 75, 75);
   color: white;
 }
+
+.error{
+  color: rgb(255, 45, 45);
+  padding-bottom: 40px;
+}
