@@ -26,9 +26,11 @@ function contacto() {
     }else document.getElementById("dni_error").innerHTML = ""
 
     if(email == ""){
-        document.getElementById("email_error").innerHTML = "El campo Email es obligatorio"
+        document.getElementById("error").innerHTML = "El campo Email es obligatorio"
 
-    }document.getElementById("email_error").innerHTML = ""
+
+
+    }else document.getElementById("error").innerHTML = ""
 
 
 
