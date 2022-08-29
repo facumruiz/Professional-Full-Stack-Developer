@@ -1,0 +1,15 @@
+form{
+    text-align: center; 
+}
+body{
+    background-color: Black;
+
+}
+.reloj {
+
+    background-color: Black;
+    color: White;
+    font-family: Verdana, Arial, Helvetica;
+    font-size: 100pt;
+    text-align: center;
+}
