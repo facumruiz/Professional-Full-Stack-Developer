@@ -1,7 +1,7 @@
 # Desarrollo-en-ReactJS
 Curso numero uno de la diplomatura en "Professional Full-Stack Developer" de la UTN
 
-# MODULO 1
+# MODULO 1 (Introduccion)
 En esta módulo veremos ....
 
 - ¿Qué es HTML?
