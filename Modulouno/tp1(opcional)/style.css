@@ -23,11 +23,13 @@ input, select, textarea {
   /* Make sure that padding and width stays in place */
   margin-top: 6px;
   /* Add a top margin */
-  margin-bottom: 16px;
+  margin-bottom: 2px;
   /* Bottom margin */
   resize: vertical
     /* Allow the user to vertically resize the textarea (not horizontally) */
 }
+
+
 
 /* Style the content */
 .content {
@@ -44,7 +46,7 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("
 
 
 /* Set a specific height */
-height: 60%;
+height: 88%;
 
 /* Position and center the image to scale nicely on all screens */
 background-position: center;
@@ -86,6 +88,14 @@ input[type=submit]:hover {
   color: green;
   margin-bottom: 20px;
   margin-top: 20px;
+}
+
+.validacion{
+  color: dodgerblue;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  
+
 }
 /* Add a background color and some padding around the form */
 .container {

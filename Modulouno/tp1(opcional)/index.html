@@ -6,29 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
+
 </head>
 
 <body>
     <div class="header">
-        <a href="#default" class="logo">Seguro No Pagamos</a>
+        <a href="#default" class="logo" data-aos="fade-right">Seguro No Pagamos</a>
         <div class="header-right">
-            <a href="#contacto">Contacto</a>
+            <a href="#contacto" data-aos="fade-left">Contacto</a>
         </div>
     </div>
 
-    <div class="hero-image">
+    <div class="hero-image" data-aos="fade-up">
         <div class="hero-text">
-            <h1>NO PAGAMOS</h1>
-            <h2>La mejor manera de invertir <b>tu dinero</b></h2>
+            <h1 data-aos="fade-up">NO PAGAMOS</h1>
+            <h2 data-aos="fade-up">La mejor manera de invertir <b>tu dinero</b></h2>
 
         </div>
     </div>
     </div>
 
-    <div class="container" style="background-color: white;" id="about">
+    <div class="container" style="background-color: white;" id="about" data-aos="fade-up">
 
-        <div class="row">
+        <div class="row" data-aos="fade-up">
             <div class="column-66">
                 <h1 class="large-font" style="color:MediumSeaGreen;">Asegurar tu dinero</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsum qui sed ullam vero laborum hic,
@@ -45,54 +47,61 @@
 
 
 
-    <div class="container" id="contacto">
+    <div class="container" id="contacto" data-aos="fade-up">
 
-        <h1 style="color: rgb(75, 75, 75);">Contactanos</h1>
-        <form action="" onsubmit="contacto(); return false;" name="form_contacto">
+        <h1 style="color: rgb(75, 75, 75);" data-aos="fade-right">Contactanos</h1>
+        <form onsubmit="contacto(); return false;" name="form_contacto">
 
             <label for="Nombre">Nombre</label>
-            <input type="text" name= "nombre" id="id_Nombre" placeholder="Su nombre...">
-            <div id="nombre_error" class="error"></div>
+            <input type="text" name="nombre" id="id_Nombre" placeholder="Su nombre...">
+            <div id="nombre_error" class="error" ></div>
 
             <label for="Apellido">Apellido</label>
-            <input type="text" name= "apellido" id="id_Apellido" placeholder="Su apellido...">
-            <div id="apellido_error" class="error"></div>
+            <input type="text" name="apellido" id="id_Apellido" placeholder="Su apellido..." >
+            <div id="apellido_error" class="error" ></div>
 
             <label for="DNI">DNI</label>
-            <input type="number" name="dni" placeholder="Su DNI..." id="id_DNI">
-            <div id="dni_error" class="error"></div>
+            <input type="number" name="dni" placeholder="Su DNI..." id="id_DNI" >
+            <div id="dni_error" class="error" ></div>
 
             <label for="Email">Email</label>
-            <input type="text" name="email" placeholder="Su email.." id="id_Email">
-            <div id="error" class="error"></div>
+            <input type="text" name="email" placeholder="Su email.." id="id_Email" >
+            <div id="error" class="error" ></div>
 
             <label for="Telefono">Telefono</label>
-            <input type="number" name="telefono" placeholder="Su Telefono..." id="id_telefono">
+            <input type="number" name="telefono" placeholder="Su Telefono..." >
 
-            <label>Tipo de seguro</label>
-            <select id="seguro" name="seguro" onchange="contacto();">
-                <option value="$500">Básico</option>
-                <option value="$1000">Intermedio</option>
-                <option value="$1500">Premium</option>
-            </select>
+            <div style="margin-top: 35px;">
+                <label>Tipo de seguro</label>
+                <select id="seguro" name="seguro" onchange="contacto();">
+                    <option value="$500">Básico</option>
+                    <option value="$1000">Intermedio</option>
+                    <option value="$1500">Premium</option>
+                </select>
+            </div>
 
-            <label id="precio" class="preciototal">.</label>
+            <label id="precio" class="preciototal" data-aos="fade-right"></label>
 
 
-            <input type="submit" value="Submit">
+            <input type="submit" name="button" value="Submit"  data-aos="fade-up" >
 
         </form>
+        <label id="validacion" class="validacion" data-aos="fade-right"></label>
     </div>
 
 
 
     <footer>
         <a href="https://github.com/facumruiz">Autor: Facundo Ruiz<a>
-            <div><a>facundoruiz105@gmail.com</a></div>
-        </p>
+                <div><a>facundoruiz105@gmail.com</a></div>
+                </p>
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
