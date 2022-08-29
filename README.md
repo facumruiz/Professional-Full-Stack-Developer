@@ -1,10 +1,10 @@
-#Reloj hecho en JS
+# Reloj hecho en JS
 Desarrollemos un pequeño “reloj” que muestre la hora actual por pantalla utilizando javascript
 
 new Date() al no recibir parámetro en su constructor nos retorna la fecha actual
-var hora = momentoActual.getHours()
-var minuto = momentoActual.getMinutes()
-var segundo = momentoActual.getSeconds()
+- var hora = momentoActual.getHours()
+- var minuto = momentoActual.getMinutes()
+- var segundo = momentoActual.getSeconds()
 Con el objeto resultante de Date() obtenemos la hora, minutos y segundos
 
 con setTimeout("mueveReloj()",1000)
