@@ -28,4 +28,5 @@ Al seleccionar el tipo de seguro (básico, intermedio, premium) se deberá mostr
 
 ### Link de la resolucion del ejercicio: 
 <a href="https://tp1-optativo.facumruiz.repl.co" target="_blank"><img src="https://cdn.freebiesupply.com/logos/large/2x/replit-logo-png-transparent.png" height="30" width="80"></a>
+[![Run on Repl.it](https://repl.it/badge/github/freeCodeCamp/boilerplate-npm)](https://tp1-optativo.facumruiz.repl.co)
 
