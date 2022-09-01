@@ -14,27 +14,31 @@ function contacto() {
    /* Pregunto por el estado de todos los inputs */
     if(nombre == ""){
         document.form_contacto.nombre.style.border = '1px solid rgb(255, 45, 45)'
+        document.getElementById("nombre_error").style.color = 'rgb(255, 45, 45)'
         document.getElementById("nombre_error").innerHTML = "El campo Nombre es obligatorio"
 
-    }else document.getElementById("nombre_error").innerHTML = ""
+    }else document.getElementById("nombre_error").innerHTML = "."
 
     if(apellido == ""){
         document.form_contacto.apellido.style.border = '1px solid rgb(255, 45, 45)'
+        document.getElementById("apellido_error").style.color = 'rgb(255, 45, 45)'
         document.getElementById("apellido_error").innerHTML = "El campo Apellido es obligatorio"
 
-    }else document.getElementById("apellido_error").innerHTML = ""
+    }else document.getElementById("apellido_error").innerHTML = "."
 
     if(dni == ""){
         document.form_contacto.dni.style.border = '1px solid rgb(255, 45, 45)'
+        document.getElementById("dni_error").style.color = 'rgb(255, 45, 45)'
         document.getElementById("dni_error").innerHTML = "El campo DNI es obligatorio"
 
-    }else document.getElementById("dni_error").innerHTML = ""
+    }else document.getElementById("dni_error").innerHTML = "."
 
     if(email == ""){
         document.form_contacto.email.style.border = '1px solid rgb(255, 45, 45)'
+        document.getElementById("error").style.color = 'rgb(255, 45, 45)'
         document.getElementById("error").innerHTML = "El campo Email es obligatorio"
     
-    }else document.getElementById("error").innerHTML = ""
+    }else document.getElementById("error").innerHTML = "."
 
 
 
@@ -59,7 +63,7 @@ function contacto() {
     if(nombre == ""  || apellido == ""|| dni == ""|| email == ""){
         /* Muestro mensaje de error */
         document.getElementById("precio").style.color = 'rgb(255, 45, 45)' // cambio estilos de mensaje
-        document.getElementById("precio").innerHTML = "Por favor complete todos los campos del formulario" //muestro mensaje error con estilos
+        document.getElementById("precio").innerHTML = "Complete los campos, para ver el precio del servicio" //muestro mensaje error con estilos
 
 
     }else{
