@@ -30,3 +30,6 @@ Al seleccionar el tipo de seguro (básico, intermedio, premium) se deberá mostr
 
 [![Run on Repl.it](https://repl.it/badge/github/freeCodeCamp/boilerplate-npm)](https://tp1-optativo.facumruiz.repl.co)
 
+### Error de forms
+![Bootstrap-FORM-Google-Chrome-2022-09-05-18-39-12-_online-video-cutter com_](https://user-images.githubusercontent.com/80124560/188514903-cf2c6b72-ad2c-46aa-865d-79fd2aa509ad.gif)
+
