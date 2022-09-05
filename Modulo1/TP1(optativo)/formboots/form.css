@@ -4,8 +4,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-
 }
 
 .navbar-brand{
@@ -23,7 +21,6 @@ body {
 
 .form-group {
     margin-top: 2.5%;
-
 }
 
 .form {
@@ -42,12 +39,25 @@ body {
 
 .precio{
     font-size: 30;
+}
 
+.submit{
+    background-color: #04AA6D;
+    color: white;
+    border-radius: 20px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;    
+    
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 footer{
     padding-top: 1.5%;
-
     height: 60px;
     color: white;
     font-size: 20px;
