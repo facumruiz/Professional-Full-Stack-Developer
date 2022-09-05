@@ -3,7 +3,7 @@
 # Desarrollo-en-ReactJS
 Curso numero uno de la diplomatura en "Professional Full-Stack Developer" de la UTN
 
-# Modulo 1:
+## Modulo 1:
 
 ### Trabajo Practico 1 (Optativo)
 Consigna:
