@@ -32,3 +32,6 @@ Desarrollador una calculadora que tenga:
 - 4 botones de operadores básicos (suma, resta, multiplicación, división)
 Al realizar la cuenta se deberá actualizar el campo resultado
 
+### Link de la resolucion: 
+[![Run on Repl.it](https://repl.it/badge/github/freeCodeCamp/boilerplate-npm)](https://replit.com/@facumruiz/tp2-optativo)
+
