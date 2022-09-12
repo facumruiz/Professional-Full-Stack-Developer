@@ -24,6 +24,7 @@ Al seleccionar el tipo de seguro (básico, intermedio, premium) se deberá mostr
 ### Link de la resolucion: 
 [![Run on Repl.it](https://repl.it/badge/github/freeCodeCamp/boilerplate-npm)](https://tp1-optativo.facumruiz.repl.co)
 
+## Modulo 2:
 
 Desarrollador una calculadora que tenga:
 
