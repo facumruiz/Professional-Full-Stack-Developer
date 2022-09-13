@@ -1,0 +1,8 @@
+
+//una funcion no tiene metodos
+//fragment es un contenedor que no se trnslada a un elemto html <></>
+//snippets
+// los archivos jsx van con la primer letra en mayusula
+// BORRAR DE TODO siempre node modules por que pesa
+// SKU CODIGO UNICO DEL PRODUCTO
+// Crear componentes inyectarlos y demas

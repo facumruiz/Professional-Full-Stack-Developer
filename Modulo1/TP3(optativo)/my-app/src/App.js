@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './Home'; // llamo a mi componente Home (SIN .)
 
 //PARTE 1
 
@@ -8,10 +9,10 @@ function Welcome(props){
 }
 function App() {
   return (
-    <div>
-      <Welcome name="Sara"></Welcome>
-      <Welcome name="Cahal"></Welcome>      
-      <Welcome name="Edite"></Welcome>
+    //uso Home en pseudocomponente
+    <div className='App'>
+      hola mundo
+      <Home></Home>
     </div>
         
   );
