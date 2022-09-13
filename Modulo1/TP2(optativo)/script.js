@@ -16,7 +16,7 @@ const dividir = (a, b) => {
 function suma() {
   let n1 = parseInt(document.getElementById("N1").value);
   let n2 = parseInt(document.getElementById("N2").value);
-  console.log(n1, n2);
+  //console.log(n1, n2);
 
   let operacion_suma = sumar(n1, n2);
   document.getElementById("resultado").innerHTML = `${operacion_suma}`;
@@ -25,7 +25,7 @@ function suma() {
 function resta() {
   let n1 = parseInt(document.getElementById("N1").value);
   let n2 = parseInt(document.getElementById("N2").value);
-  console.log(n1, n2);
+  //console.log(n1, n2);
 
   let operacion_resta = restar(n1, n2);
   document.getElementById("resultado").innerHTML = `${operacion_resta}`;
@@ -34,7 +34,7 @@ function resta() {
 function multi() {
   let n1 = parseInt(document.getElementById("N1").value);
   let n2 = parseInt(document.getElementById("N2").value);
-  console.log(n1, n2);
+  //console.log(n1, n2);
 
   let operacion_multi = multiplicar(n1, n2);
   document.getElementById("resultado").innerHTML = `${operacion_multi}`;
@@ -43,7 +43,8 @@ function multi() {
 function divi() {
   let n1 = parseInt(document.getElementById("N1").value);
   let n2 = parseInt(document.getElementById("N2").value);
-
+  //console.log(n1, n2);
+  
   if (n2 === 0) {
     document.getElementById(
       "resultado"
@@ -54,3 +55,4 @@ function divi() {
     document.getElementById("resultado").innerHTML = `${operacion_dividir}`;
   }
 }
+
