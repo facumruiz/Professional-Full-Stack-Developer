@@ -50,3 +50,6 @@ Nombre
 ,Precio
 ,SKU
 ,Cantidad disponible
+
+### Captura de resolucion
+![fototp3](https://user-images.githubusercontent.com/80124560/190216658-263d31c1-896b-4651-bbfb-ec46fb3538d8.PNG)
