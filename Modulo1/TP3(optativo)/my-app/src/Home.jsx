@@ -1,15 +1,14 @@
 import React, { Component } from "react";
-import Banner from "./Banner";
+
+import Producto from "./Producto";
+
 
 class Home extends Component {
   render() /*componente*/ {
-    const numero = 1;
     return (
 
       <div>
-        Home
-        {numero}
-        <Banner></Banner>
+        <Producto/>
       </div>
     );
   }

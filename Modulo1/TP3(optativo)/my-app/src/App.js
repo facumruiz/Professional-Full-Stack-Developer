@@ -11,7 +11,6 @@ function App() {
   return (
     //uso Home en pseudocomponente
     <div className='App'>
-      hola mundo
       <Home></Home>
     </div>
         
