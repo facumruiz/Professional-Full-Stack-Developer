@@ -9,12 +9,12 @@ Curso numero uno de la diplomatura en "Professional Full-Stack Developer" de la 
 ### Trabajo Practico 1 (Optativo)
 Realizar un Formulario
 Los datos que se deben solicitar son los siguientes:
-- Nombre
-- Apellido
-- DNI
-- Email
-- Teléfono
-- Tipo de seguro: Básico, Intermedio, Premium
+ Nombre
+, Apellido
+, DNI
+, Email
+, Teléfono
+, Tipo de seguro: Básico, Intermedio, Premium
 
 Al seleccionar el tipo de seguro (básico, intermedio, premium) se deberá mostrar el pantalla el valor de cada uno:
 - Basico: $500
