@@ -37,3 +37,14 @@ Al realizar la cuenta se deberá actualizar el campo resultado
 ### Link de la resolucion: 
 [![Run on Repl.it](https://repl.it/badge/github/freeCodeCamp/boilerplate-npm)](https://replit.com/@facumruiz/tp2-optativo)
 
+### Trabajo Practico 3 (Optativo)
+
+Crear una aplicación con react cli llamada "myapp". 
+
+Desarrollar el maquetado de una pagina de detalle de un producto para un sitio de ecommerce, se deberán visualizar los siguientes datos:
+
+Nombre
+Descripción
+Precio
+SKU
+Cantidad disponible
