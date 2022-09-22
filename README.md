@@ -22,7 +22,7 @@ Al seleccionar el tipo de seguro (básico, intermedio, premium) se deberá mostr
 - Premium: $1500
 
 ### Link de la resolucion: 
-[![Run on Repl.it](https://repl.it/badge/github/freeCodeCamp/boilerplate-npm)](https://tp1-optativo.facumruiz.repl.co)
+[![Run on Repl.it](https://repl.it/badge/github/freeCodeCamp/boilerplate-npm)](https://tp2-optativo.facumruiz.repl.co)
 
 #
 
