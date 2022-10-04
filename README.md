@@ -56,6 +56,6 @@ Nombre
 
 | Trabajo Practico 1 (Optativo) | Trabajo Practico 2 (Optativo) | Trabajo Practico 3 (Optativo) |
 | :---:         |     :---:      |          :---: |
-|![tp1-consigna](https://user-images.githubusercontent.com/80124560/193945184-e9a1bde1-e9d7-4c62-a586-13e157288166.PNG)|![tp2-consigna](https://user-images.githubusercontent.com/80124560/193945377-85e20e4a-9060-4d86-9f97-923d6662708b.PNG)| |
+
 | git status   | git status     | ![fototp3](https://user-images.githubusercontent.com/80124560/190216658-263d31c1-896b-4651-bbfb-ec46fb3538d8.PNG)   |
 | [![Run on Repl.it](https://repl.it/badge/github/freeCodeCamp/boilerplate-npm)](https://replit.com/@facumruiz/tp2-optativo)    | [![Run on Repl.it](https://repl.it/badge/github/freeCodeCamp/boilerplate-npm)](https://replit.com/@facumruiz/tp2-optativo)      | -      |
