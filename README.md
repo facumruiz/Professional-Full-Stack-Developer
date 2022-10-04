@@ -47,8 +47,7 @@ Nombre
 
 | Trabajo Practico 1 (Optativo) | Trabajo Practico 2 (Optativo) | Trabajo Practico 3 (Optativo) |
 | :---:         |     :---:      |          :---: |
-| Realizar un Formulario
-Los datos que se deben solicitar son los siguientes: |  |  |
+| Realizar un Formulario. Los datos que se deben solicitar son los siguientes: |  |  |
 |  |  | -      |
 
 #
