@@ -53,6 +53,5 @@ Nombre
 
 | Trabajo Practico 1 (Optativo) | Trabajo Practico 2 (Optativo) | Trabajo Practico 3 (Optativo) |
 | :---:         |     :---:      |          :---: |
-| ![tp1-muestra](https://user-images.githubusercontent.com/80124560/193945759-dc9a2be8-44df-44a9-a3cc-584d0cbfbaea.PNG) |  ![2022-10-04-20-00-51](https://user-images.githubusercontent.com/80124560/193946293-7b35f37a-25df-4615-b7cb-e7dccd77319c.gif)
-    | ![fototp3](https://user-images.githubusercontent.com/80124560/190216658-263d31c1-896b-4651-bbfb-ec46fb3538d8.PNG)   |
+| ![tp1-muestra](https://user-images.githubusercontent.com/80124560/193945759-dc9a2be8-44df-44a9-a3cc-584d0cbfbaea.PNG) |  ![2022-10-04-20-00-51](https://user-images.githubusercontent.com/80124560/193946293-7b35f37a-25df-4615-b7cb-e7dccd77319c.gif) | ![fototp3](https://user-images.githubusercontent.com/80124560/190216658-263d31c1-896b-4651-bbfb-ec46fb3538d8.PNG)   |
 | [![Run on Repl.it](https://repl.it/badge/github/freeCodeCamp/boilerplate-npm)](https://replit.com/@facumruiz/tp2-optativo)    | [![Run on Repl.it](https://repl.it/badge/github/freeCodeCamp/boilerplate-npm)](https://replit.com/@facumruiz/tp2-optativo)      | -      |
