@@ -49,7 +49,9 @@ Nombre
 ,SKU
 ,Cantidad disponible
 
+#
 
+### RESOLUCION
 
 | Trabajo Practico 1 (Optativo) | Trabajo Practico 2 (Optativo) | Trabajo Practico 3 (Optativo) |
 | :---:         |     :---:      |          :---: |
