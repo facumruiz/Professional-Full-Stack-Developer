@@ -6,7 +6,9 @@ Curso numero uno de la diplomatura en "Professional Full-Stack Developer" de la 
 
 ## Modulo 1:
 
-### Trabajo Practico 1 (Optativo)
+| Trabajo Practico 1 (Optativo) | Trabajo Practico 2 (Optativo) | Trabajo Practico 3 (Optativo) |
+| :---         |     :---:      |          ---: |
+| ### Trabajo Practico 1 (Optativo)
 Realizar un Formulario
 Los datos que se deben solicitar son los siguientes:
  Nombre
@@ -22,7 +24,10 @@ Al seleccionar el tipo de seguro (básico, intermedio, premium) se deberá mostr
 - Premium: $1500
 
 ### Link de la resolucion: 
-[![Run on Repl.it](https://repl.it/badge/github/freeCodeCamp/boilerplate-npm)](https://tp2-optativo.facumruiz.repl.co)
+[![Run on Repl.it](https://repl.it/badge/github/freeCodeCamp/boilerplate-npm)](https://tp2-optativo.facumruiz.repl.co)   | git status     | git status    |
+| git diff     | git diff       | git diff      |
+
+
 
 #
 
