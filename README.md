@@ -23,8 +23,6 @@ Al seleccionar el tipo de seguro (básico, intermedio, premium) se deberá mostr
 
 
 
-#
-
 ### Trabajo Practico 2 (Optativo)
 
 Desarrollador una calculadora que tenga:
@@ -34,8 +32,6 @@ Desarrollador una calculadora que tenga:
 Al realizar la cuenta se deberá actualizar el campo resultado
 
 
-
-#
 
 ### Trabajo Practico 3 (Optativo)
 
