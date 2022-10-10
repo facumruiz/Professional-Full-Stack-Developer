@@ -47,7 +47,12 @@ function ContenidoFuncion() {
       </table>
 
       <p> {texto} </p>
+
     </div>
+    
   );
 }
+
 export default ContenidoFuncion;
+
+

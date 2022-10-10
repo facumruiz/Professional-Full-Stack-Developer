@@ -11,20 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-p {
-color: rgb(140, 255, 140);
-}
-
-table, th, td {
-  
-  background-color: rgba(0, 0, 0, 0.171);
-}
-
-td {
-  font-size: 20px;
-}
-
-.imagen{
-  background-color: rgba(	48,	74,	42, 0.671);
-}
