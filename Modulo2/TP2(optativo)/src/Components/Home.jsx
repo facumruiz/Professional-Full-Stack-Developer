@@ -1,11 +1,12 @@
 import React from 'react';
 
-import Productos from './Productos';
+import Productos from './TableCovid';
 
 
 function Home(){
     return(
         <>
+
             <div>
                 <Productos />
             </div>
