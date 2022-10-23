@@ -4,6 +4,7 @@ import { Link, useParams } from "react-router-dom";
 import { getByIdProductos } from "../Services/productosServices";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "react-bootstrap/Carousel";
+import Button from "react-bootstrap/Button";
 
 function Detalle() {
   const { id } = useParams();
@@ -42,10 +43,10 @@ function Detalle() {
 
     return (
       <div className="row">
-
-        <Carousel style={{ width: "500px" }}>
+        <Carousel style={{ width: "450px" }}>
           <Carousel.Item>
             <img
+              style={{ height: "350px" }}
               className="cardpro d-block w-100 img-thumbnail"
               src={img1}
               alt="First slide"
@@ -54,6 +55,7 @@ function Detalle() {
           </Carousel.Item>
           <Carousel.Item>
             <img
+              style={{ height: "350px" }}
               className="cardpro d-block w-100 img-thumbnail"
               src={img2}
               alt="First slide"
@@ -62,6 +64,7 @@ function Detalle() {
           </Carousel.Item>
           <Carousel.Item>
             <img
+              style={{ height: "350px" }}
               className="cardpro d-block w-100 img-thumbnail"
               src={img3}
               alt="First slide"
@@ -73,6 +76,8 @@ function Detalle() {
           {" "}
           {producto.title}
           <h3 className="col">$ {producto.price}</h3>
+
+          <Button variant="primary" size="lg">Comprar</Button>
         </p>
       </div>
     );
