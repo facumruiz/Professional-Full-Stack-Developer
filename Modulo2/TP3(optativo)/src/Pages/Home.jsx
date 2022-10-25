@@ -1,5 +1,5 @@
 import React from 'react';
-import Banner from '../Components/Banner';
+
 import Productos from '../Components/Productos';
 
 
@@ -9,11 +9,9 @@ function Home(){
 
             <div>
                 <Productos />
+
             </div>
-            
-            <div>
-                <Banner />
-            </div>
+
         </>
     )
 }

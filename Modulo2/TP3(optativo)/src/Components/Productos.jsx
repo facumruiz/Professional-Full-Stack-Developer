@@ -1,47 +1,66 @@
-import React, {useState,useEffect} from "react"
-import { getAllProductos } from "../Services/productosServices"
-import Producto from "./Producto"
+import React, { useState, useEffect } from "react";
+import { getAllProductos } from "../Services/productosServices";
+import Producto from "./Producto";
 
-function Productos(){
+function Productos() {
+  const [productos, setProductos] = useState([]);
+  const [isLoading, setIsloading] = useState(true);
+  const [search, setSearch] = useState("");
 
-  const [productos,setProductos] = useState([])
-  const [isLoading,setIsloading] = useState(true)
+  //función de búsqueda
+  const searcher = (e) => {
+    setSearch(e.target.value);
+    console.log(e.target.value);
+  };
+  //metodo de filtrado 1
+  /*  let results = []
+   if(!search)
+   {
+       results = productos
+   }else{
+        results = users.filter( (dato) =>
+        dato.title.toLowerCase().includes(search.toLocaleLowerCase())
+    )
+   } */
 
-  useEffect(
-    ()=>{
-      const result = async ()=>{
-        try{
-          const responseData = await getAllProductos()
-          console.log(responseData)
-          setProductos(responseData.data.results)
+  //metodo de filtrado 2
 
-          setIsloading(false)
-        }catch(e){
-          console.log(e)
-        }
-       
+  const results = !search ? productos : productos.filter((data) => data.title.toLowerCase().includes(search.toLocaleLowerCase()));
+
+  useEffect(() => {
+    const result = async () => {
+      try {
+        const responseData = await getAllProductos();
+        console.log(responseData);
+        setProductos(responseData.data.results);
+
+        setIsloading(false);
+      } catch (e) {
+        console.log(e);
       }
-      result()
-    },
-    []
-  )
-  if(isLoading){
-      return(
-        <div>
-          Cargando...
-        </div>
-      )
-  }else{
-    //console.log(productos.map(producto => console.log(producto)))
-      return (
-        <div>
+    };
+    result();
+  }, []);
+  if (isLoading) {
+    return <div>Cargando...</div>;
+  } else {
 
-          {productos.map(producto =>  <Producto {...producto} />)}
+    return (
+      <div>
+        <input
+          value={search}
+          onChange={searcher}
+          type="text"
+          placeholder="Search"
+          className="form-control w-75 mx-auto d-block"
 
-        </div>
-      )
-  }   
-
+        ></input>
+        {results.map((producto) => (
+          <Producto {...producto} />
+        ))}
+      </div>
+    );
+  }
 }
 
-export default Productos
+export default Productos;
