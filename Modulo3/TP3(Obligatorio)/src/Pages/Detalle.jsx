@@ -15,10 +15,10 @@ function Detalle() {
   useEffect(() => {
     const result = async () => {
       try {
-        const responseData = await getByIdProductos(id);
-        if (responseData.data) {
+        const productoData = await getByIdProductos(id);
+        if (productoData.data) {
           //console.log(responseData.data)
-          setProducto(responseData.data);
+          setProducto(productoData.data());
         }
 
         setIsloading(false);
@@ -34,12 +34,7 @@ function Detalle() {
     return <div>Cargando...</div>;
   } else {
     console.log(producto);
-    let imagenesProducto = producto.pictures.map((a) => a.url);
-    console.log(imagenesProducto);
 
-    const img1 = imagenesProducto[0];
-    const img2 = imagenesProducto[1];
-    const img3 = imagenesProducto[2];
 
     return (
       <div className="row">
@@ -48,7 +43,7 @@ function Detalle() {
             <img
               style={{ height: "350px" }}
               className="cardpro d-block w-100 img-thumbnail"
-              src={img1}
+              src={producto.image}
               alt="First slide"
             />
             <Carousel.Caption></Carousel.Caption>
@@ -57,7 +52,7 @@ function Detalle() {
             <img
               style={{ height: "350px" }}
               className="cardpro d-block w-100 img-thumbnail"
-              src={img2}
+              src={producto.image}
               alt="First slide"
             />
             <Carousel.Caption></Carousel.Caption>
@@ -66,7 +61,7 @@ function Detalle() {
             <img
               style={{ height: "350px" }}
               className="cardpro d-block w-100 img-thumbnail"
-              src={img3}
+              src={producto.image}
               alt="First slide"
             />
             <Carousel.Caption></Carousel.Caption>
