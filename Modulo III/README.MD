@@ -21,19 +21,19 @@ Crear una aplicación con react cli llamada "myapp".
 Desarrollar el maquetado de una pagina de detalle de un producto para un sitio de ecommerce, se deberán visualizar los siguientes datos:
 
 Home: Listado de productos. 
-,Campos de ejemplo nombre, precio, sku, descripcion
+- Campos de ejemplo nombre, precio, sku, descripcion
 
 Detalle de producto:
-,Campos de ejemplo: Nombre del producto, descripción, precio, sku
+- Campos de ejemplo: Nombre del producto, descripción, precio, sku
 
 Registro:
-,Campos de ejemplos Campos Nombre, Apellido, Email, Contraseña
+- Campos de ejemplos Campos Nombre, Apellido, Email, Contraseña
 
 Login:
-,Campos de ejemplo: Por Email y Contraseña
+- Campos de ejemplo: Por Email y Contraseña
 
 Checkout de compra (Opcional, su desarrollo incrementara la nota final pero no es necesario para aprobar el tp)
-,A esta pantalla se llegara haciendo click en el boton comprar desde la pagina de detalle del producto
-,En la misma se visualizaran los datos necesarios del producto a comprar y el precio final de compra
-,Al hacer click en "Confirmar Compra" se mostrara al usuario un mensaje "Gracias por su compra"
-,Se compra de a un producto (NO es un carrito de compras)
+- A esta pantalla se llegara haciendo click en el boton comprar desde la pagina de detalle del producto
+- En la misma se visualizaran los datos necesarios del producto a comprar y el precio final de compra
+- Al hacer click en "Confirmar Compra" se mostrara al usuario un mensaje "Gracias por su compra"
+- Se compra de a un producto (NO es un carrito de compras)
