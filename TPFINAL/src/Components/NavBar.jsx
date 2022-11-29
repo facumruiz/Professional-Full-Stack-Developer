@@ -6,7 +6,7 @@ import React, { useState} from "react";
 function NavBar() {
   const [texto] = useState();
 
-  console.log(texto);
+
   return (
     <Navbar className="p-3">
       <Navbar.Collapse id="navbarScroll">

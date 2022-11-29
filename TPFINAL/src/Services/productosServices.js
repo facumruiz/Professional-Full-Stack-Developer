@@ -1,5 +1,5 @@
-import { set } from "react-hook-form"
-import instance from "../Config/axios"
+//import { set } from "react-hook-form"
+//import instance from "../Config/axios"
 import firebase from "../Config/firebase"
 export async function  getAllProductos(){
     // return fetch("https://api.mercadolibre.com/sites/MLA/search?q=ipod").then((res)=>res.json())

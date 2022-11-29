@@ -8,12 +8,13 @@ import { useEffect, useState } from "react";
 import ModalDelete from "../Components/Modals/ModalDelete";
 
 
+
 function ProductosModificar() {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+
   const { id } = useParams();
-  const [producto, setProducto] = useState({});
+
   const [isLoading, setIsloading] = useState(true);
   const {
     register,
@@ -44,10 +45,10 @@ function ProductosModificar() {
   }, [id]);
 
   const onSubmit = async (data) => {
-    console.log(data);
+
     try {
       const document = await update(id, data);
-      console.log(document);
+
     } catch (e) {
       console.log(e);
     }
@@ -56,7 +57,7 @@ function ProductosModificar() {
   const handleDelete = async() =>{
     setShow(true);
     try{
-      const document = await deleteProducto(id)
+      await deleteProducto(id)
     }catch(e){
       console.log(e)
     }
@@ -127,10 +128,10 @@ function ProductosModificar() {
                 {errors.image && <span>This field is required</span>}
               </Form.Text>
             </Form.Group>
-            <Button type="submit" variant="primary">
+            <Button type="submit" variant="primary" to={`/`}>
               Guardar
             </Button>
-            <Button variant="danger" onClick={handleDelete}>Eleminar</Button>
+            <Button variant="danger" onClick={handleDelete} to={`/`} >Eleminar</Button>
             <ModalDelete show={show} handleClose={handleClose}/>
           </Form>
         </Card.Body>

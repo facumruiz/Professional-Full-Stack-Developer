@@ -20,7 +20,6 @@ function Producto({ id, name, description, price, category_id, image, sku }) {
               <div style={{ textAlign: "left", fontSize: 20 }}>
                 <Card.Text
                   variant="primary"
-                  eventKey="3"
                   as={Link}
                   to={`/producto/${id}`}
                 >

@@ -2,7 +2,6 @@ import "./App.css";
 import NavBar from "./Components/NavBar";
 import { BrowserRouter as Router } from "react-router-dom";
 import Public from "./Routes/Public";
-import Loading from "./Components/Loading/Loading";
 
 
 

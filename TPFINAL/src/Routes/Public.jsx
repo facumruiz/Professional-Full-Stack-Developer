@@ -13,9 +13,7 @@ import Checkout from "../Pages/Cheackout";
 function Public(){
     return(
         <Routes>
-          
           <Route path='/' element={<Home />} />
-
           <Route path='/alta' element={<Registro />} />
           <Route path='/ingresar' element={<Login />} />
           <Route path='/producto/:id' element={<Detalle />} />

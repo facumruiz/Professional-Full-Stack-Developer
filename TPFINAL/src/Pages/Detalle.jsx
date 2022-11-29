@@ -33,7 +33,7 @@ function Detalle() {
     result();
   }, [id]);
 
-  console.log(producto);
+
 
   return (
     <Loading loading={isLoading}>
@@ -71,7 +71,7 @@ function Detalle() {
               </Carousel.Item>
             </Carousel>
           </div>
-          <p className="">
+    
             <h3 className="col">Precio: $ {producto.price}</h3>
 
             <Button
@@ -79,10 +79,11 @@ function Detalle() {
               to={`/producto/checkout/${id}`}
               variant="primary"
               size="lg"
+              className="w-40 mx-auto m-5 "
             >
               Comprar
             </Button>
-          </p>
+          
           <Card.Footer className="text-muted">SKU: {producto.sku}</Card.Footer>
         </Card>
      
