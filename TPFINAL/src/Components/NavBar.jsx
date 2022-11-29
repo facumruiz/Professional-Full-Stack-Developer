@@ -1,12 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Nav, Navbar, NavLink, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import React, { useState} from "react";
+import React, { } from "react";
 
 function NavBar() {
-  const [texto] = useState();
-
-
   return (
     <Navbar className="p-3">
       <Navbar.Collapse id="navbarScroll">

@@ -15,7 +15,7 @@ function ProductosModificar() {
 
   const { id } = useParams();
 
-  const [isLoading, setIsloading] = useState(true);
+  const [ setIsloading] = useState(true);
   const {
     register,
     handleSubmit,
@@ -42,12 +42,15 @@ function ProductosModificar() {
     };
 
     result();
-  }, [id]);
+  },
+
+  // eslint-disable-next-line
+  [id]);
 
   const onSubmit = async (data) => {
 
     try {
-      const document = await update(id, data);
+      await update(id, data);
 
     } catch (e) {
       console.log(e);
