@@ -6,16 +6,18 @@ import FloatingLabel from "react-bootstrap/FloatingLabel";
 import { deleteProducto, getByIdProductos, update } from "../Services/productosServices";
 import { useEffect, useState } from "react";
 import ModalDelete from "../Components/Modals/ModalDelete";
+import AlertCustom from "../Components/Alerts/AlertCustom";
+import {useNavigate} from "react-router-dom"
 
 
 
 function ProductosModificar() {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
-
+  const [alert, setAlert] = useState({variant:'', text:''})
   const { id } = useParams();
+  const navigate = useNavigate()
 
-  const [ setIsloading] = useState(true);
   const {
     register,
     handleSubmit,
@@ -35,7 +37,6 @@ function ProductosModificar() {
           setValue("sku", productoData.data().sku);
         }
 
-        setIsloading(false);
       } catch (e) {
         console.log(e);
       }
@@ -51,9 +52,13 @@ function ProductosModificar() {
 
     try {
       await update(id, data);
-
+      setAlert({variant:'success', text:'Producto modificado con exito'})
+      setTimeout(()=>{
+        navigate("/")
+      },1000)
     } catch (e) {
       console.log(e);
+      setAlert({variant:'danger', text:'error'})
     }
   };
 
@@ -61,8 +66,13 @@ function ProductosModificar() {
     setShow(true);
     try{
       await deleteProducto(id)
+      setAlert({variant:'success', text:'Producto eliminado con exito'})
+      setTimeout(()=>{
+        navigate("/")
+      },1000)
     }catch(e){
       console.log(e)
+      setAlert({variant:'success', text:'Error'})
     }
 
 
@@ -131,13 +141,16 @@ function ProductosModificar() {
                 {errors.image && <span>This field is required</span>}
               </Form.Text>
             </Form.Group>
-            <Button type="submit" variant="primary" to={`/`}>
+            <Button type="submit" variant="primary" >
               Guardar
             </Button>
-            <Button variant="danger" onClick={handleDelete} to={`/`} >Eleminar</Button>
+            <Button variant="danger" onClick={handleDelete} >Eleminar</Button>
             <ModalDelete show={show} handleClose={handleClose}/>
           </Form>
         </Card.Body>
+        <Card.Footer className="text-muted">
+          <AlertCustom {...alert} />
+        </Card.Footer>
       </Card>
     </div>
   );

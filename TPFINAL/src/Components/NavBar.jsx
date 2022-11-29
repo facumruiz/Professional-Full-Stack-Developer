@@ -5,9 +5,9 @@ import React, { } from "react";
 
 function NavBar() {
   return (
-    <Navbar className="p-3">
+    <Navbar variant="dark" className="p-3"  style={{backgroundColor: '#36454F'}}>
       <Navbar.Collapse id="navbarScroll">
-        <Navbar.Brand>Navbar</Navbar.Brand>
+        <Navbar.Brand>MOTOROLA</Navbar.Brand>
         <Nav className="ms-auto" style={{ fontSize: 12 }}>
           <NavLink eventKey="1" as={Link} to="/">
             Home

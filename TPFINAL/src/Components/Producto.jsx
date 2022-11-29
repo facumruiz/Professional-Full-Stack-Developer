@@ -5,8 +5,8 @@ import Card from "react-bootstrap/Card";
 
 function Producto({ id, name, description, price, category_id, image, sku }) {
   return (
-    <div>
-      <Card className="w-60">
+    <div >
+      <Card className="w-60"  >
         <Card.Header>SKU: {sku}</Card.Header>
         <div className="row">
           <div>

@@ -1,8 +1,11 @@
 import { useForm } from "react-hook-form";
+import { useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import firebase from "../Config/firebase";
 import Card from "react-bootstrap/Card";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
+import AlertCustom from "../Components/Alerts/AlertCustom";
+import {useNavigate} from "react-router-dom"
 
 function Registro() {
   const {
@@ -10,6 +13,8 @@ function Registro() {
     handleSubmit,
     formState: { errors },
   } = useForm();
+  const navigate = useNavigate()
+  const [alert, setAlert] = useState({variant:'', text:''})
   const onSubmit = async (data) => {
     console.log(data);
     try {
@@ -25,14 +30,22 @@ function Registro() {
           userId: responseUser.user.uid,
         });
         console.log(document);
+        if (document){
+          setAlert({variant:'success', text:'Usuario Registrado'})
+          setTimeout(()=>{
+            navigate("/ingresar")
+          },1000)
+        }
       }
     } catch (e) {
+      setAlert({variant:'danger', text:'Por favor ingrese datos validos'})
       console.log(e);
     }
   };
 
   return (
     <div>
+
       <Card className="text-center w-75 mx-auto mt-5 ">
         <Card.Header>Form Registro</Card.Header>
         <Card.Body>
@@ -112,6 +125,9 @@ function Registro() {
             </Button>
           </Form>
         </Card.Body>
+        <Card.Footer className="text-muted">
+          <AlertCustom {...alert} />
+        </Card.Footer>
       </Card>
     </div>
   );

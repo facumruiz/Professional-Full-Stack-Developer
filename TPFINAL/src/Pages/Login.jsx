@@ -4,12 +4,12 @@ import { useForm } from "react-hook-form";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import { useState } from "react";
+import AlertCustom from "../Components/Alerts/AlertCustom";
+
 function Login() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
+  const {register,handleSubmit,formState: { errors }} = useForm();
+  const [alert, setAlert] = useState({variant:'', text:''})
   const onSubmit = async (data) => {
     console.log(data);
     try {
@@ -18,7 +18,11 @@ function Login() {
         data.password
       );
       console.log("responseUser", responseUser.user.uid);
+      if(responseUser.user.uid){
+        setAlert({variant:'success', text:'Usuario logueado'})
+      }
     } catch (e) {
+      setAlert({variant:'danger', text:'Mail y/o contraseña invalidos'})
       console.log(e);
     }
   };
@@ -29,36 +33,28 @@ function Login() {
         <Card.Body>
           <Form onSubmit={handleSubmit(onSubmit)}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
-            <FloatingLabel
-                controlId="floatingPassword"
-                label="Ingresar mail"
-              >
-              
-              <Form.Control
-                type="email"
-                placeholder="Ingresar email"
-                {...register("email", { required: true })}
-              />
-                </FloatingLabel>
+              <FloatingLabel controlId="floatingPassword" label="Ingresar mail">
+                <Form.Control
+                  type="email"
+                  placeholder="Ingresar email"
+                  {...register("email", { required: true })}
+                />
+              </FloatingLabel>
               <Form.Text className="text-muted">
                 {errors.email && <span>This field is required</span>}
               </Form.Text>
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicPassword">
-    
-              <FloatingLabel
-                controlId="floatingPassword"
-                label="Password"
-              >
-              <Form.Control
-                type="password"
-                placeholder="Password"
-                {...register("password", {
-                  required: true,
-                  minLength: 6,
-                  maxLength: 12,
-                })}
-              />
+              <FloatingLabel controlId="floatingPassword" label="Password">
+                <Form.Control
+                  type="password"
+                  placeholder="Password"
+                  {...register("password", {
+                    required: true,
+                    minLength: 6,
+                    maxLength: 12,
+                  })}
+                />
               </FloatingLabel>
               <Form.Text className="text-muted">
                 {errors.password?.type === "required" && (
@@ -78,7 +74,9 @@ function Login() {
             </Button>
           </Form>
         </Card.Body>
-        <Card.Footer className="text-muted"></Card.Footer>
+        <Card.Footer className="text-muted">
+          <AlertCustom {...alert} />
+        </Card.Footer>
       </Card>
     </div>
   );
