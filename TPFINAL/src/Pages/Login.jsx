@@ -2,8 +2,6 @@ import FloatingLabel from "react-bootstrap/FloatingLabel";
 import firebase from "../Config/firebase";
 import { useForm } from "react-hook-form";
 import Form from "react-bootstrap/Form";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 function Login() {
@@ -31,18 +29,27 @@ function Login() {
         <Card.Body>
           <Form onSubmit={handleSubmit(onSubmit)}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Email</Form.Label>
+            <FloatingLabel
+                controlId="floatingPassword"
+                label="Ingresar mail"
+              >
+              
               <Form.Control
                 type="email"
                 placeholder="Ingresar email"
                 {...register("email", { required: true })}
               />
+                </FloatingLabel>
               <Form.Text className="text-muted">
                 {errors.email && <span>This field is required</span>}
               </Form.Text>
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
+    
+              <FloatingLabel
+                controlId="floatingPassword"
+                label="Password"
+              >
               <Form.Control
                 type="password"
                 placeholder="Password"
@@ -52,6 +59,7 @@ function Login() {
                   maxLength: 12,
                 })}
               />
+              </FloatingLabel>
               <Form.Text className="text-muted">
                 {errors.password?.type === "required" && (
                   <span>This field is required</span>

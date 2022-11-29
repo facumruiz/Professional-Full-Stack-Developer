@@ -21,3 +21,8 @@ export async function update(id, payload){
     return await firebase.firestore().doc(`productos/${id}`).set(payload)
 
 }
+
+export async function deleteProducto(id){
+    return await firebase.firestore().doc(`productos/${id}`).delete()
+
+}

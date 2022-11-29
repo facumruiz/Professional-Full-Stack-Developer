@@ -1,13 +1,17 @@
 import { useForm } from "react-hook-form";
 import { useParams } from "react-router-dom";
 import { Button, Form } from "react-bootstrap";
-import firebase from "../Config/firebase";
 import Card from "react-bootstrap/Card";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
-import { getByIdProductos, update } from "../Services/productosServices";
+import { deleteProducto, getByIdProductos, update } from "../Services/productosServices";
 import { useEffect, useState } from "react";
+import ModalDelete from "../Components/Modals/ModalDelete";
+
 
 function ProductosModificar() {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   const { id } = useParams();
   const [producto, setProducto] = useState({});
   const [isLoading, setIsloading] = useState(true);
@@ -27,6 +31,7 @@ function ProductosModificar() {
           setValue("price", productoData.data().price);
           setValue("description", productoData.data().description);
           setValue("image", productoData.data().image);
+          setValue("sku", productoData.data().sku);
         }
 
         setIsloading(false);
@@ -48,8 +53,20 @@ function ProductosModificar() {
     }
   };
 
+  const handleDelete = async() =>{
+    setShow(true);
+    try{
+      const document = await deleteProducto(id)
+    }catch(e){
+      console.log(e)
+    }
+
+
+  }
+
   return (
     <div>
+      
       <Card className="text-center w-75 mx-auto mt-5 ">
         <Card.Header>Form Alta</Card.Header>
         <Card.Body>
@@ -98,10 +115,23 @@ function ProductosModificar() {
                 {errors.image && <span>This field is required</span>}
               </Form.Text>
             </Form.Group>
-
+            <Form.Group className="mb-3">
+            <FloatingLabel label="Sku">
+              <Form.Control
+                type="text"
+                placeholder="Ingresar sku"
+                {...register("sku", { required: true })}
+              />
+              </FloatingLabel>
+              <Form.Text className="text-muted">
+                {errors.image && <span>This field is required</span>}
+              </Form.Text>
+            </Form.Group>
             <Button type="submit" variant="primary">
               Guardar
             </Button>
+            <Button variant="danger" onClick={handleDelete}>Eleminar</Button>
+            <ModalDelete show={show} handleClose={handleClose}/>
           </Form>
         </Card.Body>
       </Card>

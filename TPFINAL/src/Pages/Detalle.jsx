@@ -5,6 +5,8 @@ import { getByIdProductos } from "../Services/productosServices";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "react-bootstrap/Carousel";
 import Button from "react-bootstrap/Button";
+import Loading from "../Components/Loading/Loading";
+import Card from "react-bootstrap/Card";
 
 function Detalle() {
   const { id } = useParams();
@@ -19,6 +21,7 @@ function Detalle() {
         if (productoData.data) {
           //console.log(responseData.data)
           setProducto(productoData.data());
+          //console.log(productoData.data())
         }
 
         setIsloading(false);
@@ -30,53 +33,61 @@ function Detalle() {
     result();
   }, [id]);
 
-  if (isLoading) {
-    return <div>Cargando...</div>;
-  } else {
-    console.log(producto);
+  console.log(producto);
 
+  return (
+    <Loading loading={isLoading}>
 
-    return (
-      <div className="row">
-        <Carousel style={{ width: "450px" }}>
-          <Carousel.Item>
-            <img
-              style={{ height: "350px" }}
-              className="cardpro d-block w-100 img-thumbnail"
-              src={producto.image}
-              alt="First slide"
-            />
-            <Carousel.Caption></Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              style={{ height: "350px" }}
-              className="cardpro d-block w-100 img-thumbnail"
-              src={producto.image}
-              alt="First slide"
-            />
-            <Carousel.Caption></Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              style={{ height: "350px" }}
-              className="cardpro d-block w-100 img-thumbnail"
-              src={producto.image}
-              alt="First slide"
-            />
-            <Carousel.Caption></Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
-        <p className="col">
-          {" "}
-          {producto.title}
-          <h3 className="col">$ {producto.price}</h3>
+        <Card className="w-50 mx-auto">
+          <Card.Header>{producto.name}</Card.Header>
+          <div className="mx-auto">
+            <Carousel style={{ width: "450px" }}>
+              <Carousel.Item>
+                <img
+                  style={{ height: "800px" }}
+                  className="cardpro d-block w-100 img-thumbnail"
+                  src={producto.image}
+                  alt="First slide"
+                />
+                <Carousel.Caption></Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  style={{ height: "800px" }}
+                  className="cardpro d-block w-100 img-thumbnail"
+                  src={producto.image}
+                  alt="First slide"
+                />
+                <Carousel.Caption></Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  style={{ height: "800px" }}
+                  className="cardpro d-block w-100 img-thumbnail"
+                  src={producto.image}
+                  alt="First slide"
+                />
+                <Carousel.Caption></Carousel.Caption>
+              </Carousel.Item>
+            </Carousel>
+          </div>
+          <p className="">
+            <h3 className="col">Precio: $ {producto.price}</h3>
 
-          <Button variant="primary" size="lg">Comprar</Button>
-        </p>
-      </div>
-    );
-  }
+            <Button
+              as={Link}
+              to={`/producto/checkout/${id}`}
+              variant="primary"
+              size="lg"
+            >
+              Comprar
+            </Button>
+          </p>
+          <Card.Footer className="text-muted">SKU: {producto.sku}</Card.Footer>
+        </Card>
+     
+    </Loading>
+  );
 }
 
 export default Detalle;

@@ -1,16 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Nav, Navbar, NavLink, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 
 function NavBar() {
-  const [texto, setTexto] = useState();
+  const [texto] = useState();
 
-  const inputChange = ({ target }) => {
-    setTexto(target.value);
-  };
   console.log(texto);
   return (
     <Navbar className="p-3">

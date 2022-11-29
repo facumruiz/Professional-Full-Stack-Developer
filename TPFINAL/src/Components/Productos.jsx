@@ -1,27 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { getAllProductos } from "../Services/productosServices";
 import Producto from "./Producto";
+import CardGroup from 'react-bootstrap/CardGroup';
+import Loading from "../Components/Loading/Loading";
 
 function Productos() {
   const [productos, setProductos] = useState([]);
   const [isLoading, setIsloading] = useState(true);
-  const [search, setSearch] = useState("");
+  const [search] = useState("");
 
-  //función de búsqueda
-  const searcher = (e) => {
-    setSearch(e.target.value);
-    //console.log(e.target.value);
-  };
-  //metodo de filtrado 1
-  /*  let results = []
-   if(!search)
-   {
-       results = productos
-   }else{
-        results = users.filter( (dato) =>
-        dato.title.toLowerCase().includes(search.toLocaleLowerCase())
-    )
-   } */
+
 
   //metodo de filtrado 2
 
@@ -43,11 +31,11 @@ function Productos() {
     };
     result();
   }, []);
-  if (isLoading) {
-    return <div>Cargando...</div>;
-  } else {
+
     return (
+      <Loading loading={isLoading} >
       <div>
+          <CardGroup className="justify-content-center">
         {/*
           <input
             value={search}
@@ -58,11 +46,16 @@ function Productos() {
           ></input>
     */}
         {results.map((producto) => (
+          
+              
+      
           <Producto {...producto.data()} id={producto.id} />
         ))}
+        </CardGroup>
       </div>
+      </Loading>
     );
-  }
+  
 }
 
 export default Productos;
