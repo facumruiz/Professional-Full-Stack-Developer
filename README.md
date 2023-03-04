@@ -3,7 +3,4 @@
 Curso numero uno de la diplomatura en "Professional Full-Stack Developer" de la UTN
 # 
 ### Trabajo Final de este curso
-
-Para aprobar este curso tuve que realizar una entrega final la cual 
-
 https://motoreact.netlify.app/
